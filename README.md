@@ -72,7 +72,7 @@ def send_email():
                """
 ```
 
-Utilizing the Email Library's `'EmailMessage'` class to configure the email's content, secure a connection using SMTP_SSL, authenticate the sender, and dispatch the email. This ensures secure transmission and sender verification during the email delivery process.
+Utilizing the Email Library's `EmailMessage` class to configure the email's content, secure a connection using SMTP_SSL, authenticate the sender, and dispatch the email. This ensures secure transmission and sender verification during the email delivery process.
 
 ```
 em = EmailMessage()
@@ -89,9 +89,9 @@ with stmplib.SMTP_SSL(smtp_server, port, context=context) as server:
 
 **Create Criteria and the Driver Code**
 
-This section establishes the price criteria by setting a `'my_price'` threshold. The code snippet checks if the extracted price falls below this threshold using `'extract_price()'`. If the condition is met, the `'send_email()'` function is called, prompting an email notification to the `“receiver_email’` about the price drop.
+This section establishes the price criteria by setting a `my_price` threshold. The code snippet checks if the extracted price falls below this threshold using `extract_price()`. If the condition is met, the `send_email()` function is called, prompting an email notification to the `receiver_email` about the price drop.
 
-Note: `'my_price'` threshold, is currently set at $799 for monitoring the Apple Watch Ultra 2. Please ensure to modify this number to your desired price for tracking other products.
+Note: `my_price` threshold, is currently set at $799 for monitoring the Apple Watch Ultra 2. Please ensure to modify this number to your desired price for tracking other products.
 
 ```
 my_price = 799
