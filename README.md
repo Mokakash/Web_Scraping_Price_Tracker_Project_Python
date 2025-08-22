@@ -10,7 +10,7 @@ Below, you'll find a comprehensive overview detailing the essential stages of th
 
 In the initial step, import essential Python libraries including:
 + `requests` for making HTTP requests.
-+ `BeautifulSoup` for HTML parsing.
++ `BeautifulSoup` for HTML parsing. 
 + `smtplib` for email-sending functionality.
 + `ssl` for secure connections. 
 
